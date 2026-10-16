@@ -83,6 +83,7 @@ p.then((message) => {
 });
 */
 
+/*
 let p = new Promise((resolve, reject) => {
   let a = 1 + 1;
   if (a == 2) {
@@ -97,3 +98,21 @@ p.then((message) => {
 }).catch((error) => {
   console.error(`This is in the catch ${error}`);
 });
+*/
+
+const testPromise = new Promise((resolve, reject) => {
+  const result = 5 + 6;
+  if (result == 10) {
+    resolve("Fulfilled");
+  } else {
+    reject("Rejected");
+  }
+});
+
+testPromise
+  .then((message) => {
+    console.log(message);
+  })
+  .catch((message) => {
+    console.log({ message: "Something went wrong" });
+  });
