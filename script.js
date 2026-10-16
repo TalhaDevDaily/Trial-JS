@@ -1,20 +1,4 @@
 /*
-let p = new Promise((resolve, reject) => {
-  let a = 1 + 2;
-  if (a == 2) {
-    resolve("Success");
-  } else {
-    reject("Failed");
-  }
-});
-
-p.then((message) => {
-  console.log(`This is in the then ${message}`);
-}).catch((message) => {
-  console.log(`This is in the catch ${message}`);
-});
-*/
-
 const userName = "talha";
 const af = Array.from(userName);
 const userNameArray = Array.from(userName, (character) => {
@@ -81,3 +65,35 @@ console.log(total);
 const items2 = [1, 2, 3, 4, 5];
 const includesTwo = items2.includes(2);
 console.log(includesTwo);
+*/
+/*
+let p = new Promise((resolve, reject) => {
+  let a = 1 + 2;
+  if (a == 2) {
+    resolve("Success");
+  } else {
+    reject("Failed");
+  }
+});
+
+p.then((message) => {
+  console.log(`This is in the then ${message}`);
+}).catch((message) => {
+  console.log(`This is in the catch ${message}`);
+});
+*/
+
+let p = new Promise((resolve, reject) => {
+  let a = 1 + 1;
+  if (a == 2) {
+    resolve("Success");
+  } else {
+    reject("Failed");
+  }
+});
+
+p.then((message) => {
+  console.info(`This is in the then ${message}`);
+}).catch((error) => {
+  console.error(`This is in the catch ${error}`);
+});
