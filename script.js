@@ -160,3 +160,5 @@ async function doWork() {
 }
 
 doWork();
+
+console.log(`Hello`);
